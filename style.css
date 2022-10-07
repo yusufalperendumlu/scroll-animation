@@ -1,0 +1,95 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #4d4f53;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.img
+{
+    background: url(asset/anton-polidovets-GAW6tK1RwLE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 75%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 300ms;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.img:hover
+{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+h1
+{
+    margin: 10% 0;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #cae587 0%,#ea9a75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.box {
+    background-color: #c8ebff;
+    color: #b7f372;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+
+  .boxA
+  {
+    background-color: #c8ebff;
+    color: #b7f372;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+  }
+
+  .box:nth-of-type(even)
+  {
+    transform: translateX(-200%);
+  }
+
+
+
+  .box.show
+  {
+    transform: translateX(0);
+  }
+
+  .boxA.show1
+  {
+    transform: translateX(0);
+  }
